@@ -1,5 +1,5 @@
 {
-  "name": "@flashalpha/gex-charts",
+  "name": "@flashalpha-lab/gex-charts",
   "version": "0.1.0",
   "description": "Interactive gamma exposure (GEX) by strike chart for stocks, ETFs, indices and futures. Call wall, put wall, gamma flip and max pain from the FlashAlpha options API. Built on Apache ECharts.",
   "keywords": [
