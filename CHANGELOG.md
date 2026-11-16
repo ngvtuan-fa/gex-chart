@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- README, examples, llms.txt and TSDoc use the published package name `@flashalpha-lab/gex-charts`.
+
 ## 0.1.0
 
 First release of FlashAlpha GEX Charts.
