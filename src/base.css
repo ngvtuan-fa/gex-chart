@@ -1,0 +1,122 @@
+.flashalpha-gex {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.flashalpha-gex[data-mode="compact"] {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.flashalpha-gex .fagex-root {
+  --fagex-text: #e2e8f0;
+  --fagex-muted: #94a3b8;
+  --fagex-border: rgba(100, 116, 139, 0.32);
+  --fagex-surface: rgba(15, 23, 42, 0.55);
+  --fagex-raised: #1e293b;
+  --fagex-btn: rgba(30, 41, 59, 0.85);
+  --fagex-btn-hover: #334155;
+  --fagex-on: #2563eb;
+  --fagex-on-text: #fff;
+  --fagex-pos: #34d399;
+  --fagex-neg: #f87171;
+  --fagex-flip: #fbbf24;
+  --fagex-mp: #a78bfa;
+  --fagex-flow: #22d3ee;
+  --fagex-magnet: #f472b6;
+  --fagex-skel: rgba(100, 116, 139, 0.22);
+  --fagex-overlay: rgba(2, 6, 23, 0.72);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--fagex-text);
+  -webkit-text-size-adjust: 100%;
+}
+.flashalpha-gex .fagex-root[data-theme="flashalpha-light"] {
+  --fagex-text: #0f172a;
+  --fagex-muted: #475569;
+  --fagex-border: #e2e8f0;
+  --fagex-surface: #f8fafc;
+  --fagex-raised: #fff;
+  --fagex-btn: #fff;
+  --fagex-btn-hover: #f1f5f9;
+  --fagex-on: #1d4ed8;
+  --fagex-on-text: #fff;
+  --fagex-pos: #047857;
+  --fagex-neg: #b91c1c;
+  --fagex-flip: #b45309;
+  --fagex-mp: #6d28d9;
+  --fagex-flow: #0e7490;
+  --fagex-magnet: #db2777;
+  --fagex-skel: rgba(148, 163, 184, 0.3);
+  --fagex-overlay: rgba(255, 255, 255, 0.8);
+}
+.flashalpha-gex :where(.fagex-root, .fagex-root *, .fagex-root ::before, .fagex-root ::after) {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+.flashalpha-gex :where(.fagex-root button) {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  background-color: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  appearance: button;
+}
+.flashalpha-gex :where(.fagex-root a) {
+  color: inherit;
+  text-decoration: inherit;
+}
+.flashalpha-gex :where(.fagex-root b) {
+  font-weight: bolder;
+}
+.flashalpha-gex :where(.fagex-root small) {
+  font-size: 80%;
+}
+.flashalpha-gex :where(.fagex-root ul) {
+  list-style: none;
+}
+.flashalpha-gex :where(.fagex-root svg, .fagex-root img, .fagex-root canvas) {
+  display: block;
+  vertical-align: middle;
+}
+.flashalpha-gex .fagex-root [hidden] {
+  display: none !important;
+}
+.flashalpha-gex .fagex-root button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.flashalpha-gex .fagex-root button:focus-visible,
+.flashalpha-gex .fagex-root a:focus-visible {
+  outline: 2px solid var(--fagex-on);
+  outline-offset: 2px;
+}
+.flashalpha-gex .fagex-root[data-booting] > :not([data-r="body"]),
+.flashalpha-gex .fagex-root[data-booting] [data-r="rail"] {
+  display: none !important;
+}
+.flashalpha-gex .fagex-root[data-booting] [data-r="body"] {
+  display: block !important;
+}
+.flashalpha-gex .fagex-root[data-booting] [data-r="stage"] {
+  height: 640px !important;
+}
+.flashalpha-gex .fagex-root[data-booting][data-layout="tablet"] [data-r="stage"] {
+  height: 760px !important;
+}
+.flashalpha-gex .fagex-root[data-booting][data-layout="mobile"] [data-r="stage"] {
+  height: calc(min(60vh, 420px) + 470px) !important;
+}
+.flashalpha-gex .fagex-root[data-booting][data-orient="v"] [data-r="stage"] {
+  height: 800px !important;
+}
+.flashalpha-gex .fagex-root[data-booting][data-orient="v"][data-layout="tablet"] [data-r="stage"] {
+  height: 920px !important;
+}
+.flashalpha-gex .fagex-root[data-booting][data-orient="v"][data-layout="mobile"] [data-r="stage"] {
+  height: calc(min(75vh, 560px) + 470px) !important;
+}

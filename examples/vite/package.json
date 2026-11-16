@@ -1,0 +1,16 @@
+{
+  "name": "flashalpha-gex-charts-vite-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@flashalpha/gex-charts": "^0.1.0",
+    "echarts": "^6.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

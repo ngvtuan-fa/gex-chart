@@ -1,0 +1,328 @@
+{
+  "symbol": "SPY",
+  "as_of": "2026-04-16T14:02:49.203Z",
+  "market_open": true,
+  "price": {
+    "bid": 699.16,
+    "ask": 699.18,
+    "mid": 699.17,
+    "last": 699.17,
+    "last_update": "2026-04-16T14:02:49.203Z"
+  },
+  "volatility": {
+    "atm_iv": 14.69,
+    "hv_20": 19.27,
+    "hv_60": 15.22,
+    "vrp": -4.58,
+    "skew_25d": {
+      "expiry": "2026-04-17",
+      "days_to_expiry": 2,
+      "put_25d_iv": 18.72,
+      "atm_iv": 15.85,
+      "call_25d_iv": 15.03,
+      "skew_25d": 3.69,
+      "smile_ratio": 1.246
+    },
+    "iv_term_structure": [
+      {
+        "expiry": "2026-04-17",
+        "iv": 15.95,
+        "days_to_expiry": 2
+      },
+      {
+        "expiry": "2026-04-20",
+        "iv": 13.22,
+        "days_to_expiry": 5
+      },
+      {
+        "expiry": "2026-04-21",
+        "iv": 13.94,
+        "days_to_expiry": 6
+      },
+      {
+        "expiry": "2026-04-22",
+        "iv": 14.34,
+        "days_to_expiry": 7
+      },
+      {
+        "expiry": "2026-04-23",
+        "iv": 14.69,
+        "days_to_expiry": 8
+      },
+      {
+        "expiry": "2026-04-24",
+        "iv": 15.13,
+        "days_to_expiry": 9
+      },
+      {
+        "expiry": "2026-04-27",
+        "iv": 14.59,
+        "days_to_expiry": 12
+      },
+      {
+        "expiry": "2026-04-28",
+        "iv": 14.75,
+        "days_to_expiry": 13
+      },
+      {
+        "expiry": "2026-04-29",
+        "iv": 15.51,
+        "days_to_expiry": 14
+      },
+      {
+        "expiry": "2026-04-30",
+        "iv": 16.04,
+        "days_to_expiry": 15
+      },
+      {
+        "expiry": "2026-05-01",
+        "iv": 16.3,
+        "days_to_expiry": 16
+      },
+      {
+        "expiry": "2026-05-08",
+        "iv": 15.92,
+        "days_to_expiry": 23
+      },
+      {
+        "expiry": "2026-05-15",
+        "iv": 15.75,
+        "days_to_expiry": 30
+      },
+      {
+        "expiry": "2026-05-22",
+        "iv": 15.91,
+        "days_to_expiry": 37
+      },
+      {
+        "expiry": "2026-05-29",
+        "iv": 15.74,
+        "days_to_expiry": 44
+      },
+      {
+        "expiry": "2026-06-18",
+        "iv": 16.43,
+        "days_to_expiry": 64
+      },
+      {
+        "expiry": "2026-06-30",
+        "iv": 15.93,
+        "days_to_expiry": 76
+      },
+      {
+        "expiry": "2026-07-17",
+        "iv": 16.55,
+        "days_to_expiry": 93
+      },
+      {
+        "expiry": "2026-07-31",
+        "iv": 16.72,
+        "days_to_expiry": 107
+      },
+      {
+        "expiry": "2026-08-21",
+        "iv": 17.3,
+        "days_to_expiry": 128
+      },
+      {
+        "expiry": "2026-08-31",
+        "iv": 17.22,
+        "days_to_expiry": 138
+      },
+      {
+        "expiry": "2026-09-18",
+        "iv": 17.73,
+        "days_to_expiry": 156
+      },
+      {
+        "expiry": "2026-09-30",
+        "iv": 17.66,
+        "days_to_expiry": 168
+      },
+      {
+        "expiry": "2026-12-18",
+        "iv": 18.76,
+        "days_to_expiry": 247
+      },
+      {
+        "expiry": "2026-12-31",
+        "iv": 18.66,
+        "days_to_expiry": 260
+      },
+      {
+        "expiry": "2027-01-15",
+        "iv": 18.9,
+        "days_to_expiry": 275
+      },
+      {
+        "expiry": "2027-03-19",
+        "iv": 19.45,
+        "days_to_expiry": 338
+      },
+      {
+        "expiry": "2027-03-31",
+        "iv": 19.31,
+        "days_to_expiry": 350
+      },
+      {
+        "expiry": "2027-06-17",
+        "iv": 19.92,
+        "days_to_expiry": 428
+      },
+      {
+        "expiry": "2027-09-17",
+        "iv": 20.22,
+        "days_to_expiry": 520
+      },
+      {
+        "expiry": "2027-12-17",
+        "iv": 20.49,
+        "days_to_expiry": 611
+      },
+      {
+        "expiry": "2028-01-21",
+        "iv": 20.45,
+        "days_to_expiry": 646
+      },
+      {
+        "expiry": "2028-06-16",
+        "iv": 21.08,
+        "days_to_expiry": 793
+      },
+      {
+        "expiry": "2028-12-15",
+        "iv": 21.52,
+        "days_to_expiry": 975
+      }
+    ]
+  },
+  "options_flow": {
+    "total_call_oi": 5875173,
+    "total_put_oi": 13454891,
+    "total_call_volume": 915515,
+    "total_put_volume": 1286232,
+    "pc_ratio_oi": 2.29,
+    "pc_ratio_volume": 1.405,
+    "active_expirations": 35
+  },
+  "exposure": {
+    "net_gex": 14306638670,
+    "net_dex": 107798306325,
+    "net_vex": -185157104082,
+    "net_chex": -1304199869,
+    "gamma_flip": 694.5337556097031,
+    "call_wall": 700,
+    "put_wall": 697,
+    "max_pain": 680,
+    "highest_oi_strike": 600,
+    "regime": "positive_gamma",
+    "interpretation": {
+      "gamma": "Dealers long gamma \u2014 moves dampened, mean reversion likely",
+      "vanna": "Vol up = dealers sell delta \u2014 downside amplified if vol spikes",
+      "charm": "Time decay pushing dealers to sell \u2014 pressure into close"
+    },
+    "hedging_estimate": {
+      "spot_down_1pct": {
+        "dealer_shares": 20462318,
+        "direction": "buy",
+        "notional_usd": 14306638670
+      },
+      "spot_up_1pct": {
+        "dealer_shares": -20462318,
+        "direction": "sell",
+        "notional_usd": -14306638670
+      }
+    },
+    "zero_dte": {
+      "net_gex": 311196243,
+      "pct_of_total": 2.2,
+      "expiration": "2026-04-16"
+    },
+    "top_strikes": [
+      {
+        "strike": 700,
+        "net_gex": 8436841341,
+        "call_oi": 287990,
+        "put_oi": 95922,
+        "total_oi": 383912
+      },
+      {
+        "strike": 701,
+        "net_gex": 1697036019,
+        "call_oi": 34292,
+        "put_oi": 5855,
+        "total_oi": 40147
+      },
+      {
+        "strike": 705,
+        "net_gex": 1191208036,
+        "call_oi": 151439,
+        "put_oi": 22742,
+        "total_oi": 174181
+      },
+      {
+        "strike": 699,
+        "net_gex": 1176817331,
+        "call_oi": 41937,
+        "put_oi": 24950,
+        "total_oi": 66887
+      },
+      {
+        "strike": 710,
+        "net_gex": 1129054951,
+        "call_oi": 193571,
+        "put_oi": 29338,
+        "total_oi": 222909
+      }
+    ],
+    "oi_weighted_dte": 90.5
+  },
+  "macro": {
+    "vix": {
+      "value": 18.6,
+      "change": 0.43,
+      "change_pct": 2.37
+    },
+    "vvix": {
+      "value": 99.53,
+      "change": 1.88,
+      "change_pct": 1.93
+    },
+    "skew": {
+      "value": 139.23,
+      "change": 0,
+      "change_pct": 0
+    },
+    "spx": {
+      "value": 7015.21,
+      "change": -7.74,
+      "change_pct": -0.11
+    },
+    "move": {
+      "value": 67.941,
+      "change": 0,
+      "change_pct": 0
+    },
+    "vix_term_structure": {
+      "levels": {
+        "vix9d": 17.11,
+        "vix": 18.6,
+        "vix3m": 21.04,
+        "vix6m": 22.98
+      },
+      "near_slope_pct": 8.71,
+      "structure": "contango"
+    },
+    "vix_futures": {
+      "front_month": 21.04,
+      "spot": 18.61,
+      "spread": 2.43,
+      "basis_pct": 13.06,
+      "basis": "contango"
+    },
+    "fear_and_greed": {
+      "score": 62,
+      "rating": "greed"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "symbol": "SPY",
+    "as_of": "2026-05-13T07:44:31.3325735Z",
+    "underlying_price": 736.425,
+    "expiry": null,
+    "live_pin_risk": 34,
+    "magnet_strike": 739,
+    "distance_to_magnet_pct": 0.35,
+    "time_to_close_hours": 12.258,
+    "breakdown": {
+        "oi_score": 20,
+        "proximity_score": 30,
+        "time_score": 0,
+        "gamma_score": 100
+    }
+}

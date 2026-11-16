@@ -1,0 +1,98 @@
+{
+  "name": "@flashalpha/gex-charts",
+  "version": "0.1.0",
+  "description": "Interactive gamma exposure (GEX) by strike chart for stocks, ETFs, indices and futures. Call wall, put wall, gamma flip and max pain from the FlashAlpha options API. Built on Apache ECharts.",
+  "keywords": [
+    "gex",
+    "gamma-exposure",
+    "gex-chart",
+    "gamma-exposure-chart",
+    "dealer-gamma",
+    "gamma-flip",
+    "call-wall",
+    "put-wall",
+    "max-pain",
+    "0dte",
+    "options",
+    "options-analytics",
+    "options-chain",
+    "open-interest",
+    "spx",
+    "spy",
+    "es-futures",
+    "echarts",
+    "financial-charts",
+    "trading",
+    "flashalpha",
+    "flashalpha-api"
+  ],
+  "homepage": "https://flashalpha.com/tools/gamma-exposure?utm_source=npm&utm_medium=package&utm_campaign=gex-charts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngvtuan-fa/gex-chart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ngvtuan-fa/gex-chart/issues"
+  },
+  "author": "FlashAlpha (https://flashalpha.com)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/gex-charts.cjs",
+  "module": "./dist/gex-charts.mjs",
+  "types": "./types/index.d.ts",
+  "unpkg": "./dist/gex-charts.min.js",
+  "jsdelivr": "./dist/gex-charts.min.js",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/gex-charts.mjs",
+      "require": "./dist/gex-charts.cjs"
+    },
+    "./model": {
+      "types": "./types/model.d.ts",
+      "import": "./dist/model.mjs",
+      "require": "./dist/model.cjs"
+    },
+    "./style.css": "./dist/gex-charts.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "types",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "*.css",
+    "./dist/gex-charts.js",
+    "./dist/gex-charts.min.js"
+  ],
+  "peerDependencies": {
+    "echarts": "^6.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test \"test/**/*.test.js\"",
+    "lint:comments": "node scripts/check-source.mjs",
+    "lint:types": "tsc --noEmit --strict --lib es2020,dom types/index.d.ts types/model.d.ts",
+    "check": "npm run lint:comments && npm run lint:types && npm run build && npm test && npm pack --dry-run",
+    "prepublishOnly": "npm run check"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "acorn": "^8.19.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^26.1.0",
+    "lightningcss": "^1.33.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  }
+}

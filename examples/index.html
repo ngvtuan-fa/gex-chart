@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlashAlpha GEX Charts example</title>
+  <style>
+    body { margin: 0; padding: 24px; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background: #0b1220; color: #e2e8f0; }
+    form { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; margin-bottom: 16px; }
+    label { display: grid; gap: 4px; font-size: 12px; color: #94a3b8; }
+    input, select, button { font: inherit; padding: 6px 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: inherit; }
+    button { background: #2563eb; border-color: #2563eb; color: #fff; font-weight: 600; cursor: pointer; }
+    #gex { max-width: 1200px; }
+    #gex[data-mode="compact"] { height: 480px; }
+    p { color: #94a3b8; font-size: 13px; }
+    a { color: #60a5fa; }
+  </style>
+</head>
+<body>
+  <form id="settings">
+    <label>FlashAlpha API key
+      <input id="key" type="password" autocomplete="off" placeholder="YOUR_FLASHALPHA_API_KEY" size="36">
+    </label>
+    <label>Symbol <input id="symbol" value="SPY" size="8"></label>
+    <label>Mode
+      <select id="mode">
+        <option value="full">full</option>
+        <option value="compact">compact</option>
+        <option value="zero-dte">zero-dte</option>
+      </select>
+    </label>
+    <label>Theme
+      <select id="theme">
+        <option value="dark">dark</option>
+        <option value="light">light</option>
+        <option value="auto">auto</option>
+      </select>
+    </label>
+    <button type="submit">Show chart</button>
+  </form>
+  <p>The key stays in this browser tab (sessionStorage). Get one at <a href="https://flashalpha.com/profile?utm_source=github&amp;utm_medium=example&amp;utm_campaign=get_api_key">flashalpha.com/profile</a>. Run <code>npm run build</code> first, then serve the repository root, for example with <code>npx serve .</code>.</p>
+
+  <div id="gex"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@6.1.0/dist/echarts.min.js"></script>
+  <script src="../dist/gex-charts.min.js"></script>
+  <script>
+    var form = document.getElementById('settings');
+    var keyInput = document.getElementById('key');
+    try { keyInput.value = sessionStorage.getItem('flashalpha-api-key') || ''; } catch (e) {}
+
+    function show() {
+      var apiKey = keyInput.value.trim();
+      try { sessionStorage.setItem('flashalpha-api-key', apiKey); } catch (e) {}
+      var chart = FlashAlphaGex.init('#gex', {
+        apiKey: apiKey || undefined,
+        symbol: document.getElementById('symbol').value,
+        mode: document.getElementById('mode').value,
+        theme: document.getElementById('theme').value
+      });
+      chart.on('ready', function (e) { console.log('ready', e.model.symbol, e.model.strikes.length + ' strikes'); });
+      chart.on('locked', function (e) { console.log('locked', e); });
+      chart.on('error', function (e) { console.log('error', e); });
+    }
+
+    form.addEventListener('submit', function (e) { e.preventDefault(); show(); });
+    show();
+  </script>
+</body>
+</html>
