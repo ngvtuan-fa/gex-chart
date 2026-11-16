@@ -12,10 +12,10 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@flashalpha/gex-charts"><img src="https://img.shields.io/npm/v/@flashalpha/gex-charts.svg" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/@flashalpha/gex-charts"><img src="https://img.shields.io/npm/dm/@flashalpha/gex-charts.svg" alt="npm downloads"></a>
+  <a href="https://www.npmjs.com/package/@flashalpha-lab/gex-charts"><img src="https://img.shields.io/npm/v/@flashalpha-lab/gex-charts.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@flashalpha-lab/gex-charts"><img src="https://img.shields.io/npm/dm/@flashalpha-lab/gex-charts.svg" alt="npm downloads"></a>
   <img src="https://img.shields.io/badge/types-TypeScript-blue" alt="TypeScript types">
-  <a href="LICENSE"><img src="https://img.shields.io/npm/l/@flashalpha/gex-charts.svg" alt="MIT license"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/npm/l/@flashalpha-lab/gex-charts.svg" alt="MIT license"></a>
 </p>
 
 <p align="center">
@@ -77,7 +77,7 @@ Learn more in the [FlashAlpha exposure API docs](https://flashalpha.com/docs/lab
 ### 1. Install
 
 ```bash
-npm install @flashalpha/gex-charts echarts
+npm install @flashalpha-lab/gex-charts echarts
 ```
 
 `echarts` (v6.1 or later) is a peer dependency, so your app controls the ECharts version.
@@ -94,7 +94,7 @@ npm install @flashalpha/gex-charts echarts
 
 ```js
 import * as echarts from 'echarts';
-import * as FlashAlphaGex from '@flashalpha/gex-charts';
+import * as FlashAlphaGex from '@flashalpha-lab/gex-charts';
 
 const chart = FlashAlphaGex.init(document.getElementById('gex'), {
   apiKey: 'YOUR_FLASHALPHA_API_KEY',
@@ -162,7 +162,7 @@ The library reads your plan from the key (`GET /v1/account`, which does not coun
     <div id="gex"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/echarts@6.1.0/dist/echarts.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@flashalpha/gex-charts@0.1.0/dist/gex-charts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@flashalpha-lab/gex-charts@0.1.0/dist/gex-charts.min.js"></script>
     <script>
       FlashAlphaGex.init(document.getElementById('gex'), {
         apiKey: 'YOUR_FLASHALPHA_API_KEY',
@@ -190,7 +190,7 @@ Add one `div` and two script tags. Every element with `data-flashalpha-gex` beco
      style="height:480px"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/echarts@6.1.0/dist/echarts.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@flashalpha/gex-charts@0.1.0/dist/gex-charts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@flashalpha-lab/gex-charts@0.1.0/dist/gex-charts.min.js"></script>
 ```
 
 Supported attributes: `data-symbol`, `data-api-key`, `data-api-base`, `data-mode`, `data-theme`, `data-view`, `data-range`, `data-expiry`, `data-orientation`, `data-plan`, `data-attribution="false"`.
@@ -204,7 +204,7 @@ Supported attributes: `data-symbol`, `data-api-key`, `data-api-base`, `data-mode
 ```jsx
 import { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
-import * as FlashAlphaGex from '@flashalpha/gex-charts';
+import * as FlashAlphaGex from '@flashalpha-lab/gex-charts';
 
 export function GexChart({ symbol = 'SPY' }) {
   const ref = useRef(null);
@@ -228,7 +228,7 @@ export function GexChart({ symbol = 'SPY' }) {
 <script setup>
 import { onMounted, onBeforeUnmount, ref } from 'vue';
 import * as echarts from 'echarts';
-import * as FlashAlphaGex from '@flashalpha/gex-charts';
+import * as FlashAlphaGex from '@flashalpha-lab/gex-charts';
 
 const el = ref(null);
 let chart;
@@ -281,7 +281,7 @@ More examples are in [`examples/`](examples): a playground page, HTML attributes
 | `maxConcurrent` | `number` | `3` | The most API requests sent at the same time. |
 | `storage` | `'local' \| 'none'` | `'local'` | Remembers the visitor's view, range and layers. |
 | `storagePrefix` | `string` | `'flashalpha-gex'` | |
-| `injectCss` | `boolean` | `true` | Set `false` under a strict CSP and import `@flashalpha/gex-charts/style.css` instead. |
+| `injectCss` | `boolean` | `true` | Set `false` under a strict CSP and import `@flashalpha-lab/gex-charts/style.css` instead. |
 | `cssNonce` | `string` | – | CSP nonce for the injected style tag. |
 | `attribution` | `boolean` | `true` | Shows "GEX data by FlashAlpha" under the chart. Set `false` to hide it. |
 | `upgradeUrl` | `(plan) => string` | FlashAlpha pricing page | Where the "Upgrade" buttons of locked features link to. |
@@ -323,7 +323,7 @@ chart.dispose();
 
 Static functions: `FlashAlphaGex.init`, `FlashAlphaGex.dispose(el)`, `FlashAlphaGex.getInstanceByDom(el)`, `FlashAlphaGex.autoInit(root?)`, `FlashAlphaGex.version`.
 
-The data model alone (no DOM, no ECharts) is available as `import model from '@flashalpha/gex-charts/model'`, or as `dist/gex-charts-model.min.js` with the global `FlashAlphaGexModel`. It turns FlashAlpha API responses into strikes and levels and formats numbers, for example `model.fmtGex(1.2e9)`.
+The data model alone (no DOM, no ECharts) is available as `import model from '@flashalpha-lab/gex-charts/model'`, or as `dist/gex-charts-model.min.js` with the global `FlashAlphaGexModel`. It turns FlashAlpha API responses into strikes and levels and formats numbers, for example `model.fmtGex(1.2e9)`.
 
 ## Events
 

@@ -119,7 +119,7 @@ export interface GexOptions {
     storage?: 'local' | 'none';
     /** Prefix of the localStorage keys. @default 'flashalpha-gex' */
     storagePrefix?: string;
-    /** Injects the chart's CSS once. Set `false` under a strict CSP and import `@flashalpha/gex-charts/style.css`. @default true */
+    /** Injects the chart's CSS once. Set `false` under a strict CSP and import `@flashalpha-lab/gex-charts/style.css`. @default true */
     injectCss?: boolean;
     /** CSP nonce of the injected style tag. */
     cssNonce?: string;

@@ -11,5 +11,5 @@ First release of FlashAlpha GEX Charts.
 - Levels: call wall, put wall, gamma flip, max pain, spot; overlays for expected move, pin risk, 0DTE and the flip trail.
 - Plan read from the API key; a locked feature opens an upgrade dialog inside the chart that links to the FlashAlpha pricing page (`upgradeUrl`, `upgradeNote`, `upgradeAttrs`).
 - HTML attribute setup with `data-flashalpha-gex` in the script build.
-- Scoped CSS injected at runtime, or `@flashalpha/gex-charts/style.css`.
+- Scoped CSS injected at runtime, or `@flashalpha-lab/gex-charts/style.css`.
 - TypeScript types.

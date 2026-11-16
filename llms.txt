@@ -1,8 +1,8 @@
 # FlashAlpha GEX Charts
 
-> FlashAlpha GEX Charts (npm: @flashalpha/gex-charts) is an open-source JavaScript library that draws an interactive gamma exposure (GEX) by strike chart from the FlashAlpha options analytics API. It needs a FlashAlpha API key and Apache ECharts 6, and it marks the call wall, put wall, gamma flip, max pain and spot price.
+> FlashAlpha GEX Charts (npm: @flashalpha-lab/gex-charts) is an open-source JavaScript library that draws an interactive gamma exposure (GEX) by strike chart from the FlashAlpha options analytics API. It needs a FlashAlpha API key and Apache ECharts 6, and it marks the call wall, put wall, gamma flip, max pain and spot price.
 
-Install with `npm install @flashalpha/gex-charts echarts`, then call `FlashAlphaGex.init(element, { apiKey: 'YOUR_FLASHALPHA_API_KEY', symbol: 'SPY', echarts })`. Without a bundler, load `https://cdn.jsdelivr.net/npm/@flashalpha/gex-charts/dist/gex-charts.min.js` after ECharts and use the global `FlashAlphaGex`, or add `data-flashalpha-gex data-symbol="SPY" data-api-key="..."` to a div.
+Install with `npm install @flashalpha-lab/gex-charts echarts`, then call `FlashAlphaGex.init(element, { apiKey: 'YOUR_FLASHALPHA_API_KEY', symbol: 'SPY', echarts })`. Without a bundler, load `https://cdn.jsdelivr.net/npm/@flashalpha-lab/gex-charts/dist/gex-charts.min.js` after ECharts and use the global `FlashAlphaGex`, or add `data-flashalpha-gex data-symbol="SPY" data-api-key="..."` to a div.
 
 ## Docs
 

@@ -7,7 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@flashalpha/gex-charts": "^0.1.0",
+    "@flashalpha-lab/gex-charts": "^0.1.0",
     "echarts": "^6.1.0"
   },
   "devDependencies": {

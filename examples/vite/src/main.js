@@ -1,5 +1,5 @@
 import * as echarts from 'echarts';
-import * as FlashAlphaGex from '@flashalpha/gex-charts';
+import * as FlashAlphaGex from '@flashalpha-lab/gex-charts';
 
 const chart = FlashAlphaGex.init(document.getElementById('gex'), {
     apiKey: import.meta.env.VITE_FLASHALPHA_API_KEY,
